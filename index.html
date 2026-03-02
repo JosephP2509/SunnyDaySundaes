@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./images/SunnyDayLogo.png" type="image/x-icon">
+    <script src="main.js" defer></script>
+    <title>Sunny Day Sundaes</title>
+  </head>
+  <body>
+    <header>
+      <h1>Sunny Day Sundaes</h1>
+      <p>Sundaes & Sorbet, Coffee, Pastries</p>
+    </header>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#flavors">Flavors</a>
+      <a href="#location">Location</a>
+      <a href="#ad">Advertisement</a>
+    </nav>
+
+    <section id="about">
+      <div class="hero">
+        <img
+          src="./images/SunnyDayLogo.png"
+          alt="Sunny Day Sundaes logo"
+          style="width: 220px; max-width: 100%; margin-bottom: 20px"
+        />
+        <h2>Sweet Treats On Wheels</h2>
+        <p>
+          Sunny Day Sundaes is a bright and cheerful food truck serving sundaes,
+          sorbet, coffee, tea, and pastries. Our goal is to bring refreshing
+          frozen treats and warm drinks to customers looking for something sweet,
+          simple, and affordable.
+        </p>
+        <a class="btn" href="#menu">See the Menu</a>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="menu-grid">
+        <div class="card">
+          <h3>Drinks</h3>
+          <ul>
+            <li>Lattes - $3.00</li>
+            <li>Americanos - $2.50</li>
+            <li>Espressos - $2.00</li>
+            <li>Black/Plain Coffee - $1.00</li>
+            <li>Chai Latte - $1.50</li>
+            <li>Green Tea - $1.00</li>
+            <li>Black Tea - $1.00</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Pastries</h3>
+          <ul>
+            <li>All Pastries - $5.00</li>
+            <li>Croissants</li>
+            <li>Danishes</li>
+            <li>Toast</li>
+            <li>Bagels</li>
+            <li>Cinnamon Rolls</li>
+            <li>Muffins</li>
+            <li>Turnovers</li>
+            <li>Scones</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Sundaes & Sorbet</h3>
+          <ul>
+            <li>Sundaes & Sorbet - $5.00</li>
+            <li>Extra Scoop - $0.50</li>
+            <li>Extra Topping - $0.25</li>
+            <li>Extra Drizzle - $0.25</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="flavors">
+      <div class="card">
+        <h3>Flavors</h3>
+        <div class="flavor-list">
+          <span class="tag">Vanilla</span>
+          <span class="tag">Chocolate</span>
+          <span class="tag">Strawberry</span>
+          <span class="tag">Banana</span>
+          <span class="tag">Peach</span>
+          <span class="tag">Orange</span>
+          <span class="tag">Lemon</span>
+          <span class="tag">Watermelon</span>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top: 24px">
+        <h3>Toppings</h3>
+        <div class="topping-list">
+          <span class="tag">Strawberry Slices</span>
+          <span class="tag">Blueberries</span>
+          <span class="tag">Banana Slices</span>
+          <span class="tag">Granola</span>
+          <span class="tag">Coconut Peelings</span>
+          <span class="tag">Chocolate Chips</span>
+          <span class="tag">Sprinkles</span>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top: 24px">
+        <h3>Drizzles</h3>
+        <div class="topping-list">
+          <span class="tag">Caramel Drizzle</span>
+          <span class="tag">Chocolate Drizzle</span>
+          <span class="tag">White Chocolate</span>
+          <span class="tag">Strawberry</span>
+          <span class="tag">Reese’s Peanut Butter</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="location">
+      <div class="card">
+        <h3>Location</h3>
+        <p>Sunny Day Sundaes can be found in CCC&amp;TI's A building courtyard.</p>
+      </div>
+    </section>
+
+    <section id="ad">
+      <div class="ad-box">
+        <h2>Sunny scoops, warm sips, sweet smiles</h2>
+        <p>
+          Visit Sunny Day Sundaes in the CCC&amp;TI Food Truck Area for creamy
+          sundaes, refreshing sorbet, fresh pastries, and coffee made to brighten
+          your day.
+        </p>
+        <button class="btn" id="buildBtn">Build Your Treat</button>
+      </div>
+    </section>
+
+    <section id="builder" class="builder">
+      <h2>Build Your Ice Cream Cone</h2>
+      <div class="builder-grid">
+        <div class="builder-group">
+          <label for="flavor1">Top Scoop</label>
+          <select id="flavor1">
+            <option value="vanilla">Vanilla</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="strawberry">Strawberry</option>
+            <option value="banana">Banana</option>
+            <option value="peach">Peach</option>
+            <option value="orange">Orange</option>
+            <option value="lemon">Lemon</option>
+            <option value="watermelon">Watermelon</option>
+          </select>
+        </div>
+
+        <div class="builder-group">
+          <label for="flavor2">Bottom Scoop</label>
+          <select id="flavor2">
+            <option value="chocolate">Chocolate</option>
+            <option value="vanilla">Vanilla</option>
+            <option value="strawberry">Strawberry</option>
+            <option value="banana">Banana</option>
+            <option value="peach">Peach</option>
+            <option value="orange">Orange</option>
+            <option value="lemon">Lemon</option>
+            <option value="watermelon">Watermelon</option>
+          </select>
+        </div>
+
+        <div class="builder-group">
+          <label>Toppings</label>
+          <div class="check-list">
+            <label class="check-item">
+              <input type="checkbox" value="Strawberry Slices" />
+              Strawberry Slices
+            </label>
+            <label class="check-item">
+              <input type="checkbox" value="Blueberries" />
+              Blueberries
+            </label>
+            <label class="check-item">
+              <input type="checkbox" value="Banana Slices" />
+              Banana Slices
+            </label>
+            <label class="check-item">
+              <input type="checkbox" value="Granola" />
+              Granola
+            </label>
+            <label class="check-item">
+              <input type="checkbox" value="Coconut Peelings" />
+              Coconut Peelings
+            </label>
+            <label class="check-item">
+              <input type="checkbox" value="Chocolate Chips" />
+              Chocolate Chips
+            </label>
+            <label class="check-item">
+              <input type="checkbox" value="Sprinkles" />
+              Sprinkles
+            </label>
+          </div>
+        </div>
+
+        <div class="builder-group">
+          <label for="drizzle">Drizzle</label>
+          <select id="drizzle">
+            <option value="None">None</option>
+            <option value="Caramel Drizzle">Caramel Drizzle</option>
+            <option value="Chocolate Drizzle">Chocolate Drizzle</option>
+            <option value="White Chocolate">White Chocolate</option>
+            <option value="Strawberry">Strawberry</option>
+            <option value="Reese’s Peanut Butter">Reese’s Peanut Butter</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="cone-preview-wrap">
+        <div class="cone-preview">
+          <div class="scoop-stack">
+            <div class="scoop" id="topScoop"></div>
+            <div class="scoop" id="bottomScoop"></div>
+          </div>
+          <div class="cone"></div>
+        </div>
+        <p class="summary" id="coneSummary">
+          Your cone: Vanilla + Chocolate with no toppings and no drizzle.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+       <small> Copyright (&copy;) 2026 Sunny Day Sundaes. All Rights Reserved. </small>
+    </footer>
+  </body>
+</html>
